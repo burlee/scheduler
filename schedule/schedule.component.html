@@ -1,0 +1,12 @@
+<section>
+  <div class="time-schedule">
+    <span></span>
+    <div *ngFor="let hour of days[0].houers">{{hour}}</div>
+  </div>
+  <div *ngFor="let day of days.reverse(); let row = index;">
+    <span>
+      {{getNameOfDay(day.date)}}
+    </span>
+    <div class="hour" *ngFor="let hour of day.houers; let i = index;" (click)="getSchedule(day.date, hour, i, row)"></div>
+  </div>
+</section>

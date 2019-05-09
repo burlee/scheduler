@@ -1,0 +1,24 @@
+section{
+    .time-schedule{
+        display: flexbox;
+        div{
+            width: 20px;
+            height: 20px;
+            background: red;
+            margin-right: 3px;
+        }
+    }
+    div{
+        margin-bottom: 5px;
+        display: flex;
+        span{
+            min-width: 100px;
+        }
+        .hour{
+            width: 20px;
+            height: 20px;
+            background: red;
+            margin-right: 3px;
+        }
+    }
+}
